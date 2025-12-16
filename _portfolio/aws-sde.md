@@ -8,8 +8,13 @@ skills:
   - Scripting
   - Python
   - Ruby
-  - Infrastructure automation
+  - Infrastructure Automation
+  - Incident Response
+  - Mentoring
   - Troubleshooting
+  - AWS Services
+  - DNS
+  - Cloud Networking
 ---
 
 - Worked as a member of the Load Balancing team, who are responsible for the load balancing solutions used

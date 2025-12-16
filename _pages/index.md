@@ -8,10 +8,10 @@ narrow: true
 
 ---
 
-### Recent Blog Posts
+### Links
 
-{% for post in site.posts limit:3 %}
-{% include components/post-card.html %}
+{% for item in site.data.nav %}
+{% unless item.title == "Home" %}
+[{{item.title}}](/{{item.href}})
+{% endunless %}
 {% endfor %}
-
-
