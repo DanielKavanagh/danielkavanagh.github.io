@@ -1,1 +1,0 @@
-Hi, I'm Daniel Kavanagh. I'm a DevOps Support Engineer and aspiring Software Developer, currently living in Dublin, Ireland. I made this site to exhibit the projects I'm working, and for some occasional blogging. 

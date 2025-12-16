@@ -11,6 +11,9 @@ _site/
 # MacOS
 .DS_Store
 
+# IDE
+.idea/
+
 # Additional Ruby/bundler ignore for when you run: bundle install
 /vendor
 
