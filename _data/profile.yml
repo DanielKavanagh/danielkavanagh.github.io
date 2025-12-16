@@ -1,0 +1,16 @@
+- caption: GitHub
+  href: https://github.com/danielkavanagh
+  icon: entypo/github.svg
+
+- caption: Stack Overflow
+  href: https://stackoverflow.com/users/5148217/daniel-kavanagh
+  icon: icons/stackoverflow.svg
+
+- caption: LinkedIn
+  href: https://www.linkedin.com/in/daniel-kavanagh/
+  icon: entypo/linkedin.svg
+
+- caption: Dublin, Ireland
+  href: https://www.google.ie/maps/place/Dublin/data=!4m2!3m1!1s0x48670e80ea27ac2f:0xa00c7a9973171a0?sa=X&ved=0ahUKEwjCx5-7qbTYAhXjC8AKHS3SCOgQ8gEIKDAA
+  icon: entypo/location-pin.svg
+
