@@ -1,0 +1,16 @@
+{
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "useTabs": false,
+	"printWidth": 2000,
+    "plugins": ["prettier-plugin-go-template"],
+	"overrides": [
+		{
+			"files": "*.html",
+			"options": {
+				"parser": "go-template"
+			}
+		}
+	]
+}
