@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ .Title }}</title>
+
+        {{ with (templates.Defer (dict "key" "global")) }}
+            {{ partial "css.html" . }}
+        {{ end }}
+    </head>
+
+    <body class="h-screen bg-[url(../img/background_2.jpeg)] bg-cover">
+        <div class="h-full flex items-center justify-center">
+            {{ partial "info_box.html" . }}
+            {{ partial "floating_nav.html" . }}
+        </div>
+    </body>
+</html>
