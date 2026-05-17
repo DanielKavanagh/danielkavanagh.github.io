@@ -37,8 +37,6 @@ css:		## Compile Tailwind CSS (one-time)
 		-i ./assets/css/input.css \
 		-o ./assets/css/output.css
 
-
-
 site-run:
 	@echo "=================================="
 	@echo "Building and running Hugo site..."
@@ -54,4 +52,3 @@ css-run:
 		-i ./assets/css/input.css  \
 		-o ./assets/css/output.css \
 		--watch
-
