@@ -19,8 +19,6 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-semibold: 600;
@@ -197,6 +195,12 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
@@ -212,6 +216,9 @@
   .h-screen {
     height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -221,11 +228,20 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .animate-border {
     animation: var(--animate-border);
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -255,8 +271,15 @@
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
+  }
+  .bg-gray-600 {
+    background-color: var(--color-gray-600);
   }
   .bg-gray-600\/60 {
     background-color: color-mix(in srgb, oklch(44.6% 0.03 256.802) 60%, transparent);
@@ -273,6 +296,18 @@
   }
   .bg-\[url\(\.\.\/img\/background_2\.jpeg\)\] {
     background-image: url(../img/background_2.jpeg);
+  }
+  .bg-\[url\(\.\.\/img\/background_4\.jpeg\)\] {
+    background-image: url(../img/background_4.jpeg);
+  }
+  .bg-\[url\(\.\.\/img\/background_5\.jpeg\)\] {
+    background-image: url(../img/background_5.jpeg);
+  }
+  .bg-\[url\(\.\.\/img\/background_7\.jpeg\)\] {
+    background-image: url(../img/background_7.jpeg);
+  }
+  .bg-\[url\(\.\.\/img\/background_9\.jpeg\)\] {
+    background-image: url(../img/background_9.jpeg);
   }
   .from-fuchsia-400 {
     --tw-gradient-from: var(--color-fuchsia-400);
@@ -335,6 +370,17 @@
   .text-gray-100 {
     color: var(--color-gray-100);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .ease-in {
+    --tw-ease: var(--ease-in);
+    transition-timing-function: var(--ease-in);
+  }
   .\[animation-duration\:3s\] {
     animation-duration: 3s;
   }
@@ -361,6 +407,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-gradient-position {
   syntax: "*";
@@ -408,6 +459,15 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
 @keyframes background-move {
   0%,	100% {
     background-position: 0% 50%;
@@ -420,6 +480,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-space-x-reverse: 0;
+      --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
       --tw-gradient-via: #0000;
@@ -430,6 +491,8 @@
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
+      --tw-ease: initial;
     }
   }
 }
