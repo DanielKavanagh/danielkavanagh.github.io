@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ .Title }}</title>
+
+        {{ with (templates.Defer (dict "key" "global")) }} {{ partial "css.html" . }} {{ end }}
+    </head>
+
+    <body class="h-screen bg-[url(../img/background_2.jpeg)] bg-cover">
+        <div class="h-full flex flex-col items-center justify-center">
+            <div class="p-4 bg-gray-600/60 mb-4 rounded-sm animate-border from-fuchsia-400 to-emerald-400 [animation-duration:3s] bg-size-[400%_400%] hover:bg-linear-to-bl">
+                <a href="/" class="font-mono text-6xl text-gray-100 p-2 mb-4"> 404, click here to go home.</a>
+            </div>
+            <div class="mt-4 p-4 font-mono text-2xl text-gray-100 bg-gray-600/60 rounded-sm animate-border from-fuchsia-400 to-emerald-400 [animation-duration:3s] bg-size-[400%_400%] hover:bg-linear-to-bl"><a href="https://github.com/DanielKavanagh/danielkavanagh.github.io/issues">report issue.</a></div>
+        </div>
+    </body>
+</html>
